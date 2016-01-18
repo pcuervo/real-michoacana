@@ -7105,6 +7105,49 @@ button.close {
 .hr-gray {
   border-top: 1px solid #565656;
 }
+body {
+  background: #333;
+  color: #fff;
+  font: 300 100.1% "Helvetica Neue", Helvetica, "Arial Unicode MS", Arial, sans-serif;
+}
+#holder {
+  height: 480px;
+  left: 50%;
+  margin: -240px 0 0 -320px;
+  position: absolute;
+  top: 50%;
+  width: 640px;
+}
+#copy {
+  bottom: 0;
+  font: 300 0.7em "Helvetica Neue", Helvetica, "Arial Unicode MS", Arial, sans-serif;
+  position: absolute;
+  right: 1em;
+  text-align: right;
+}
+#copy a {
+  color: #fff;
+}
+body {
+  background: #fff;
+  color: #000;
+  font: 100.1% "Lucida Grande", Lucida, Verdana, sans-serif;
+}
+#holder {
+  height: 480px;
+  left: 50%;
+  margin: 0 0 0 -320px;
+  position: absolute;
+  top: 0;
+  width: 640px;
+}
+#copy {
+  bottom: 0;
+  font-size: .7em;
+  position: absolute;
+  right: 1em;
+  text-align: right;
+}
 @-ms-viewport {
   width: device-width;
 }
@@ -7344,8 +7387,8 @@ footer {
 }
 .bg-social-media {
   background-color: #86754d;
-  padding: 10px 0px;
-  width: 50px;
+  padding: 15px 5px;
+  width: 30px;
   height: 50px;
   border-radius: 50%;
   color: #ffffff;
