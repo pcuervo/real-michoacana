@@ -7222,4 +7222,7 @@ header {
     width: 300px;
   }
 }
+footer {
+  border-top-right-radius: solid #86754d 3px;
+}
 /*# sourceMappingURL=bootstrap.css.map */
