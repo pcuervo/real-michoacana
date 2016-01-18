@@ -164,3 +164,17 @@ input[type="button"] {
     width: 100%;
   }
 }
+
+
+.btn-secondary{
+  background-color: @secondary;
+  color: @light;
+  border-radius: 0px;
+  &:hover,
+  &:active,
+  &:focus,
+  &:visited{
+    color: @light;
+    background-color: @secondary-dark;
+  }
+}
