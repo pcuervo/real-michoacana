@@ -5855,8 +5855,6 @@ button.list-group-item-danger.active:focus {
   line-height: 1;
   color: #000;
   text-shadow: 0 1px 0 #fff;
-  opacity: 0.2;
-  filter: alpha(opacity=20);
 }
 .close:hover,
 .close:focus {
@@ -5889,6 +5887,10 @@ button.close {
 .icon--responsive {
   width: 100%;
   height: auto;
+}
+.icon--iconed--small {
+  width: 25px !important;
+  height: 25px;
 }
 .icon--iconed {
   width: 30px !important;
@@ -6021,7 +6023,6 @@ button.close {
 }
 .modal-header {
   padding: 15px;
-  border-bottom: 1px solid #e5e5e5;
 }
 .modal-header .close {
   margin-top: -2px;
@@ -7329,8 +7330,8 @@ header {
   color: #d3b50e;
 }
 footer {
-  padding-top: 3px;
-  padding-bottom: 3px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   border: solid 8px #86754d;
   background-color: #001689;
   color: #fff;
