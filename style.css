@@ -1123,17 +1123,11 @@ img {
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 4px;
-<<<<<<< HEAD
   transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -ms-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
-=======
-  -webkit-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
->>>>>>> 4be0766102a204a8cf565fefe2d6d4840e259478
   display: inline-block;
   max-width: 100%;
   height: auto;
@@ -2557,17 +2551,11 @@ output {
   border-radius: 4px;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-<<<<<<< HEAD
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   -moz-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   -ms-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-=======
-  -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-  -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
->>>>>>> 4be0766102a204a8cf565fefe2d6d4840e259478
 }
 .form-control:focus {
   border-color: #66afe9;
@@ -3471,17 +3459,11 @@ input[type="button"].btn-block {
 }
 .fade {
   opacity: 0;
-<<<<<<< HEAD
   transition: opacity 0.15s linear;
   -webkit-transition: opacity 0.15s linear;
   -moz-transition: opacity 0.15s linear;
   -ms-transition: opacity 0.15s linear;
   -o-transition: opacity 0.15s linear;
-=======
-  -webkit-transition: opacity 0.15s linear;
-  -o-transition: opacity 0.15s linear;
-  transition: opacity 0.15s linear;
->>>>>>> 4be0766102a204a8cf565fefe2d6d4840e259478
 }
 .fade.in {
   opacity: 1;
@@ -5012,17 +4994,11 @@ a.badge:focus {
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 4px;
-<<<<<<< HEAD
   transition: border 0.2s ease-in-out;
   -webkit-transition: border 0.2s ease-in-out;
   -moz-transition: border 0.2s ease-in-out;
   -ms-transition: border 0.2s ease-in-out;
   -o-transition: border 0.2s ease-in-out;
-=======
-  -webkit-transition: border 0.2s ease-in-out;
-  -o-transition: border 0.2s ease-in-out;
-  transition: border 0.2s ease-in-out;
->>>>>>> 4be0766102a204a8cf565fefe2d6d4840e259478
 }
 .thumbnail > img,
 .thumbnail a > img {
@@ -5149,17 +5125,11 @@ a.thumbnail.active {
   background-color: #337ab7;
   -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
   box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
-<<<<<<< HEAD
   transition: width 0.6s ease;
   -webkit-transition: width 0.6s ease;
   -moz-transition: width 0.6s ease;
   -ms-transition: width 0.6s ease;
   -o-transition: width 0.6s ease;
-=======
-  -webkit-transition: width 0.6s ease;
-  -o-transition: width 0.6s ease;
-  transition: width 0.6s ease;
->>>>>>> 4be0766102a204a8cf565fefe2d6d4840e259478
 }
 .progress-striped .progress-bar,
 .progress-bar-striped {
@@ -5876,7 +5846,6 @@ button.close {
   border: 0;
   -webkit-appearance: none;
 }
-<<<<<<< HEAD
 .icon {
   display: inline-block;
   vertical-align: middle;
@@ -5943,8 +5912,6 @@ button.close {
 .icon--stroke polygon {
   stroke: currentColor;
 }
-=======
->>>>>>> 4be0766102a204a8cf565fefe2d6d4840e259478
 .modal-open {
   overflow: hidden;
 }
@@ -6324,17 +6291,11 @@ button.close {
 .carousel-inner > .item {
   display: none;
   position: relative;
-<<<<<<< HEAD
   transition: 0.6s ease-in-out left;
   -webkit-transition: 0.6s ease-in-out left;
   -moz-transition: 0.6s ease-in-out left;
   -ms-transition: 0.6s ease-in-out left;
   -o-transition: 0.6s ease-in-out left;
-=======
-  -webkit-transition: 0.6s ease-in-out left;
-  -o-transition: 0.6s ease-in-out left;
-  transition: 0.6s ease-in-out left;
->>>>>>> 4be0766102a204a8cf565fefe2d6d4840e259478
 }
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
@@ -6631,7 +6592,6 @@ button.close {
 .affix {
   position: fixed;
 }
-<<<<<<< HEAD
 .relative {
   position: relative;
 }
@@ -7021,8 +6981,6 @@ button.close {
 .no-border-radius {
   border-radius: 0px;
 }
-=======
->>>>>>> 4be0766102a204a8cf565fefe2d6d4840e259478
 @-ms-viewport {
   width: device-width;
 }
