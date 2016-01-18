@@ -6649,6 +6649,15 @@ button.close {
 .color-tertiary {
   color: #d3b50e;
 }
+.bg-primary {
+  background-color: #001689;
+}
+.bg-secondary {
+  background-color: #86754d;
+}
+.bg-tertiary {
+  background-color: #d3b50e;
+}
 .width-auto {
   width: auto;
 }
@@ -7198,6 +7207,19 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important;
+  }
+}
+header {
+  background-color: rgba(255, 255, 255, 0.5);
+  height: 80px;
+  padding-top: 48px;
+}
+.logo {
+  width: 150px;
+}
+@media (min-width: 480px) {
+  .logo {
+    width: 300px;
   }
 }
 /*# sourceMappingURL=bootstrap.css.map */
