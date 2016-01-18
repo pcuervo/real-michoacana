@@ -477,15 +477,15 @@ input[type="checkbox"] {
   @media (min-width: @screen-sm-min) {
     // Inline-block all the things for "inline"
     .form-group {
-      display: inline-block;
+      display: block;
       margin-bottom: 0;
       vertical-align: middle;
     }
 
     // In navbar-form, allow folks to *not* use `.form-group`
     .form-control {
-      display: inline-block;
-      width: auto; // Prevent labels from stacking above inputs in `.form-group`
+      display: block;
+      width: 100%; // Prevent labels from stacking above inputs in `.form-group`
       vertical-align: middle;
     }
 
