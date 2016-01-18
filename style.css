@@ -5888,6 +5888,10 @@ button.close {
   width: 100%;
   height: auto;
 }
+.icon--iconed--small {
+  width: 25px !important;
+  height: 25px;
+}
 .icon--iconed {
   width: 30px !important;
   height: 30px;
@@ -6019,7 +6023,6 @@ button.close {
 }
 .modal-header {
   padding: 15px;
-  border-bottom: 1px solid #e5e5e5;
 }
 .modal-header .close {
   margin-top: -2px;
