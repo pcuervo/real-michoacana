@@ -1164,7 +1164,7 @@ hr {
   cursor: pointer;
 }
 body {
-  font-family: "lft-etica";
+  font-family: "lft-etica", sans-serif;
 }
 h1,
 h2,
@@ -1178,8 +1178,8 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: inherit;
-  font-weight: 700;
+  font-family: "lft-etica", sans-serif;
+  font-weight: 600;
   line-height: 1.1;
   color: inherit;
 }
