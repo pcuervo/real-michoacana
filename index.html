@@ -141,7 +141,39 @@
 					<div class="[ bg-secondary-gradient ][ padding-top-bottom--xlarge padding-sides ][ text-center ]">
 						<div class="[ margin-bottom--large ]">
 							<h2 class="[ text-uppercase ][ color-light ][ no-margin--top ]">Centros de distribución</h2>
-							<img class="[ img-responsive ][ margin-auto margin-top-bottom--large ]" src="img/mapa1.png" alt="">
+						<!-- Map with raphael -->
+							<div id="canvas">
+								<div id="paper"></div>
+								<div id="chiapas">
+									<h2>Chiapas</h2>
+									<p></p>
+								</div>
+								<div id="guerrero">
+									<h2>Guerrero</h2>
+									<p></p>
+								</div>
+								<div id="oaxaca">
+									<h2>Oaxaca</h2>
+									<p></p>
+								</div>
+								<div id="puebla">
+									<h2>Puebla</h2>
+									<p></p>
+								</div>
+								<div id="queretaro">
+									<h2>Queretaro</h2>
+									<p></p>
+								</div>
+								<div id="veracruz">
+									<h2>Veracruz</h2>
+									<p></p>
+								</div>
+								<div id="yucatan">
+									<h2>Yucatan</h2>
+									<p></p>
+								</div>
+							</div>
+
 							<h2 class="[ margin-bottom--small ][ color-gray ][ text-uppercase ]">Corporativo</h2>
 							<hr class="[ hr-gray ][ width--50 ][ no-margin--top ]">
 							<p class="[ color-gray ][ padding-sides--xsm--large ]">Fracción 3 Carretera Cuautitlán-Tepotzotlán km 3 s/n, Col. San Mateo, Iztacalco, C.P. 54713, Cuautitlan Izcalli, Estado de México</p>
@@ -197,6 +229,7 @@
 
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.0/js/bootstrap.min.js"></script>
+		<script src="js/raphael.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/functions.js"></script>
 		<script src="js/plugins.js"></script>
 		<script>
@@ -210,6 +243,10 @@
 				**/
 
 			});
+
+			window.onload = function () {
+				map();
+			};
 		</script>
 
 	</body>

@@ -7108,15 +7108,13 @@ button.close {
 #canvas {
   height: 800px;
   left: 50%;
-  margin: -150px 0 0 -300px;
-  position: absolute;
+  margin: 0px 0 0 0px;
   top: 50%;
   width: 800px;
 }
 #paper {
   height: 800px;
   left: 0;
-  position: absolute;
   top: 0;
   width: 800px;
 }
@@ -7159,9 +7157,6 @@ button.close {
   right: 0;
   top: 0;
   width: 300px;
-}
-h2 {
-  text-align: center;
 }
 @-ms-viewport {
   width: device-width;
