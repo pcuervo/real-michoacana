@@ -35,9 +35,9 @@
 		<script src="js/raphael.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript" charset="utf-8">
 		window.onload = function () {
-			var R = Raphael("paper", 300, 300);
+			var R = Raphael("paper", 800, 600);
 			var attr = {
-				fill: "#333",
+				fill: "#fff",
 				stroke: "#666",
 				"stroke-width": 1,
 				"stroke-linejoin": "round"
@@ -81,7 +81,7 @@
 				(function (st, state) {
 					st[0].style.cursor = "pointer";
 					st[0].onmouseover = function () {
-						current && aus[current].animate({fill: "#333", stroke: "#666"}, 500) && (document.getElementById(current).style.display = "");
+						current && aus[current].animate({fill: "#d3b50e", stroke: "#86754d"}, 500) && (document.getElementById(current).style.display = "");
 						st.animate({fill: st.color, stroke: "#ccc"}, 500);
 						st.toFront();
 						R.safari();
@@ -89,7 +89,7 @@
 						current = state;
 					};
 					st[0].onmouseout = function () {
-						st.animate({fill: "#333", stroke: "#666"}, 500);
+						st.animate({fill: "#86754d", stroke: "#86754d"}, 500);
 						st.toFront();
 						R.safari();
 					};
