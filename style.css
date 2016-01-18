@@ -1263,12 +1263,18 @@ h1,
 }
 h2,
 .h2 {
-  font-size: 30px;
+  font-size: 20px;
 }
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   h2,
   .h2 {
-    font-size: 20px;
+    font-size: 26px;
+  }
+}
+@media (min-width: 992px) {
+  h2,
+  .h2 {
+    font-size: 30px;
   }
 }
 h3,
@@ -2916,13 +2922,13 @@ select[multiple].input-lg {
 }
 @media (min-width: 768px) {
   .form-inline .form-group {
-    display: inline-block;
+    display: block;
     margin-bottom: 0;
     vertical-align: middle;
   }
   .form-inline .form-control {
-    display: inline-block;
-    width: auto;
+    display: block;
+    width: 100%;
     vertical-align: middle;
   }
   .form-inline .form-control-static {
@@ -4386,13 +4392,13 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 @media (min-width: 768px) {
   .navbar-form .form-group {
-    display: inline-block;
+    display: block;
     margin-bottom: 0;
     vertical-align: middle;
   }
   .navbar-form .form-control {
-    display: inline-block;
-    width: auto;
+    display: block;
+    width: 100%;
     vertical-align: middle;
   }
   .navbar-form .form-control-static {
@@ -6821,6 +6827,12 @@ button.close {
 .padding-top-bottom--xxxlarge {
   padding-top: 60px;
   padding-bottom: 60px;
+}
+@media (min-width: 768px) {
+  .padding-top-bottom--xxxxlarge--sm {
+    padding-top: 72px;
+    padding-bottom: 72px;
+  }
 }
 .no-padding-sides {
   padding: 0px;
