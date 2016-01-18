@@ -255,50 +255,33 @@
 //--------------------------
 .hr-gray{ border-top: 1px solid @gray; }
 
-
-
-body {
-    background: #333;
-    color: #fff;
-    font: 300 100.1% "Helvetica Neue", Helvetica, "Arial Unicode MS", Arial, sans-serif;
-}
-#holder {
-    height: 480px;
-    left: 50%;
-    margin: -240px 0 0 -320px;
-    position: absolute;
-    top: 50%;
-    width: 640px;
-}
-#copy {
-    bottom: 0;
-    font: 300 .7em "Helvetica Neue", Helvetica, "Arial Unicode MS", Arial, sans-serif;
-    position: absolute;
-    right: 1em;
-    text-align: right;
-}
-#copy a {
-    color: #fff;
-}
-
-
-body {
-    background: #fff;
-    color: #000;
-    font: 100.1% "Lucida Grande", Lucida, Verdana, sans-serif;
-}
-#holder {
-    height: 480px;
-    left: 50%;
-    margin: 0 0 0 -320px;
-    position: absolute;
-    top: 0;
-    width: 640px;
-}
-#copy {
-    bottom: 0;
-    font-size: .7em;
-    position: absolute;
-    right: 1em;
-    text-align: right;
-}
+//Map
+#canvas {
+        height: 800px;
+        left: 50%;
+        margin: -150px 0 0 -300px;
+        position: absolute;
+        top: 50%;
+        width: 800px;
+      }
+      #paper {
+        height: 800px;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 800px;
+      }
+      #sonora, #veracruz, #chiapas, #bcn, #bcs, #chihuahua, #coahuila, #nuevoleon ,#tamaulipas ,#sinaloa ,#durango ,#zacatecas,
+      #sanluispotosi, #nayarit, #jalisco, #aguascalientes, #guanajuato, #queretaro, #hidalgo, #colima, #michoacan, #mexico, #distritofedera,
+      #tlaxcala, #puebla, #guerrero, #morelos, #oaxaca, #tabasco, #campeche, #yucatan, #quintanaroo {
+        display: none;
+        height: 400px;
+        overflow: auto;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 300px;
+      }
+      h2 {
+        text-align: center;
+      }
