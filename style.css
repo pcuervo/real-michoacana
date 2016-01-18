@@ -1534,6 +1534,11 @@ address {
   font-style: normal;
   line-height: 1.42857143;
 }
+a,
+a:hover,
+a:active {
+  text-decoration: none;
+}
 code,
 kbd,
 pre,
