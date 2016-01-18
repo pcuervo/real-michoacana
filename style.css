@@ -6640,6 +6640,15 @@ button.close {
 .no-decoration {
   text-decoration: none;
 }
+.color-primary {
+  color: #001689;
+}
+.color-secondary {
+  color: #001689;
+}
+.color-tertiary {
+  color: #001689;
+}
 .width-auto {
   width: auto;
 }
