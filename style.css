@@ -1262,6 +1262,12 @@ h2,
 .h2 {
   font-size: 30px;
 }
+@media (max-width: 768px) {
+  h2,
+  .h2 {
+    font-size: 20px;
+  }
+}
 h3,
 .h3 {
   font-size: 24px;
@@ -2535,7 +2541,7 @@ output {
   padding-top: 7px;
   font-size: 14px;
   line-height: 1.42857143;
-  color: #555555;
+  color: #565656;
 }
 .form-control {
   display: block;
@@ -2544,7 +2550,7 @@ output {
   padding: 6px 12px;
   font-size: 14px;
   line-height: 1.42857143;
-  color: #555555;
+  color: #565656;
   background-color: #fff;
   background-image: none;
   border: 1px solid #ccc;
@@ -3457,6 +3463,18 @@ input[type="reset"].btn-block,
 input[type="button"].btn-block {
   width: 100%;
 }
+.btn-secondary {
+  background-color: #86754d;
+  color: #fff;
+  border-radius: 0px;
+}
+.btn-secondary:hover,
+.btn-secondary:active,
+.btn-secondary:focus,
+.btn-secondary:visited {
+  color: #fff;
+  background-color: #716341;
+}
 .fade {
   opacity: 0;
   transition: opacity 0.15s linear;
@@ -3891,7 +3909,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   font-size: 14px;
   font-weight: normal;
   line-height: 1;
-  color: #555555;
+  color: #565656;
   text-align: center;
   background-color: #eeeeee;
   border: 1px solid #ccc;
@@ -4025,7 +4043,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {
-  color: #555555;
+  color: #565656;
   background-color: #fff;
   border: 1px solid #ddd;
   border-bottom-color: transparent;
@@ -5912,6 +5930,18 @@ button.close {
 .icon--stroke polygon {
   stroke: currentColor;
 }
+.bg-image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+}
+.rectangle-large {
+  height: 400px;
+}
+.rectangle {
+  height: 250px;
+}
 .modal-open {
   overflow: hidden;
 }
@@ -6564,6 +6594,15 @@ button.close {
   margin-left: auto;
   margin-right: auto;
 }
+.center-full {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
 .pull-right {
   float: right !important;
 }
@@ -6670,6 +6709,12 @@ button.close {
 .width-10 {
   width: 10%;
 }
+.width--50 {
+  width: 50px;
+}
+.height-rectangle {
+  height: 150px;
+}
 .no-padding {
   padding: 0 !important;
 }
@@ -6748,6 +6793,10 @@ button.close {
 .padding-top-bottom--xxlarge {
   padding-top: 48px;
   padding-bottom: 48px;
+}
+.padding-top-bottom--xxxlarge {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .no-padding-sides {
   padding: 0px;
@@ -6861,6 +6910,9 @@ button.close {
 }
 .margin {
   margin: 20px;
+}
+.no-margin--bottom {
+  margin-bottom: 0px;
 }
 .margin-bottom {
   margin-bottom: 20px;
@@ -6980,6 +7032,36 @@ button.close {
 }
 .no-border-radius {
   border-radius: 0px;
+}
+.bg-secondary-opacity {
+  background-color: rgba(134, 117, 77, 0.5);
+}
+.bg-secondary-gradient {
+  background: #86754d;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(180deg, #86754d, #fff);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(180deg, #86754d, #fff);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(180deg, #86754d, #fff);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(180deg, #86754d, #fff);
+  /* Standard syntax */
+}
+.bg-color-quaternary {
+  background-color: #bbb39e;
+}
+.color-light {
+  color: #fff;
+}
+.color-dark {
+  color: #000;
+}
+.color-gray {
+  color: #565656;
+}
+.hr-gray {
+  border-top: 1px solid #565656;
 }
 @-ms-viewport {
   width: device-width;

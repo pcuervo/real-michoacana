@@ -12,6 +12,9 @@
 .center-block {
   .center-block();
 }
+.center-full {
+  .center-full();
+}
 .pull-right {
   float: right !important;
 }
@@ -93,6 +96,10 @@
 .width-20   { width: 20%;}
 .width-10   { width: 10%;}
 
+.width--50 { width: 50px;}
+
+.height-rectangle{height: 150px;}
+
 // Padding
 // -------------------------
 
@@ -124,6 +131,7 @@
 .padding-top-bottom--large{ padding-top: (@padding-base-vertical*4); padding-bottom: (@padding-base-vertical*4); }
 .padding-top-bottom--xlarge{ padding-top: (@padding-base-vertical*6); padding-bottom: (@padding-base-vertical*6); }
 .padding-top-bottom--xxlarge{ padding-top: (@padding-base-vertical*8); padding-bottom: (@padding-base-vertical*8); }
+.padding-top-bottom--xxxlarge{ padding-top: (@padding-base-vertical*10); padding-bottom: (@padding-base-vertical*10); }
 
 .no-padding-sides{ padding: 0px;}
 .padding-sides{ padding-left: (@padding-base-horizontal*2); padding-right: (@padding-base-horizontal*2); }
@@ -163,6 +171,7 @@
 .margin-auto{ margin: auto; }
 .margin{ margin: @margin-base; }
 
+.no-margin--bottom{ margin-bottom: 0px;}
 .margin-bottom{ margin-bottom: @margin-base; }
 .margin-bottom--xsmall{ margin-bottom: (@margin-base/4); }
 .margin-bottom--small{ margin-bottom: (@margin-base/2); }
@@ -207,3 +216,26 @@
 // -------------------------
 .no-border{ border: none; }
 .no-border-radius{ border-radius: 0px;}
+
+// Background-color
+//--------------------------
+.bg-secondary-opacity { background-color: rgba(134, 117, 77, 0.5);}
+.bg-secondary-gradient {
+  background: @secondary; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(180deg, @secondary, @light); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(180deg, @secondary, @light); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(180deg, @secondary, @light); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(180deg, @secondary, @light); /* Standard syntax */
+}
+.bg-color-quaternary{ background-color: @quaternary;}
+
+
+// Color
+//--------------------------
+.color-light{ color: @light;}
+.color-dark{ color: @gray-base;}
+.color-gray{ color: @gray;}
+
+// hr
+//--------------------------
+.hr-gray{ border-top: 1px solid @gray; }
