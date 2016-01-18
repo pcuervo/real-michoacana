@@ -1163,6 +1163,9 @@ hr {
 [role="button"] {
   cursor: pointer;
 }
+body {
+  font-family: "lft-etica";
+}
 h1,
 h2,
 h3,
@@ -1176,7 +1179,7 @@ h6,
 .h5,
 .h6 {
   font-family: inherit;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 1.1;
   color: inherit;
 }
@@ -6649,6 +6652,9 @@ button.close {
 .color-tertiary {
   color: #d3b50e;
 }
+.color-light {
+  color: #fff;
+}
 .bg-primary {
   background-color: #001689;
 }
@@ -7211,8 +7217,8 @@ button.close {
 }
 header {
   background-color: rgba(255, 255, 255, 0.5);
-  height: 80px;
-  padding-top: 48px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .logo {
   width: 150px;
@@ -7223,6 +7229,19 @@ header {
   }
 }
 footer {
-  border-top-right-radius: solid #86754d 3px;
+  padding: 12px 24px;
+  border: solid 5px #86754d;
+  background-color: #001689;
+  color: #fff;
+  text-align: center;
+}
+.bg-social-media {
+  background-color: #86754d;
+  padding: 10px 2px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: #ffffff;
+  z-index: 1000;
 }
 /*# sourceMappingURL=bootstrap.css.map */
