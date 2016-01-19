@@ -48,10 +48,10 @@ var canadamap = document.getElementById("canada-map"),
 		province.classList.add("active");
 		var provinceName = province.querySelector("title").innerHTML,
 		provincePara = province.querySelector("desc p");
-		sourceImg = province.querySelector("img"),
-		imgPath = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/";
+		// sourceImg = province.querySelector("img"),
+		// imgPath = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/";
 		provinceInfo.innerHTML = "";
-		provinceInfo.insertAdjacentHTML("afterbegin", "<img src="+imgPath + sourceImg.getAttribute('xlink:href')+" alt='"+sourceImg.getAttribute('alt')+"'><h1>"+provinceName+"</h1><p>"+provincePara.innerHTML+"</p>");
+		provinceInfo.insertAdjacentHTML("afterbegin", "<h1>"+provinceName+"</h1><p>"+provincePara.innerHTML+"</p>");
 		provinceInfo.classList.add("show");
 		}
 	})

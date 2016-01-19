@@ -260,7 +260,7 @@
 
 
 #canada-map {
-  
+
   fill: @light;
   & #otros{ fill:@gray-xlight; }
 }
@@ -293,8 +293,12 @@
     width: 100%;
     position: static;
     background: none;
-    & p{ color: @gray-base!important;}
+    & p{ color: @gray!important;}
   }
+   @media (min-width: @screen-md) {
+    width: 30%;
+    font-size: 16px;
+    }
   &.show p {
     color: @light;
     font-size: 14px;
@@ -305,6 +309,7 @@
       color: @light;
       padding: @padding-base-vertical;
       text-align: center;
+      font-size: 20px;
     }
     & img { width: 100%; }
 }

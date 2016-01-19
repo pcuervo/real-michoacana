@@ -7149,7 +7149,13 @@ button.close {
     background: none;
   }
   #provinceInfo p {
-    color: #000 !important;
+    color: #565656 !important;
+  }
+}
+@media (min-width: 992px) {
+  #provinceInfo {
+    width: 30%;
+    font-size: 16px;
   }
 }
 #provinceInfo.show p {
@@ -7164,6 +7170,7 @@ button.close {
   color: #fff;
   padding: 6px;
   text-align: center;
+  font-size: 20px;
 }
 #provinceInfo img {
   width: 100%;
