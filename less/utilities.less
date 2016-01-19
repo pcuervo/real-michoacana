@@ -7,19 +7,19 @@
 // -------------------------
 
 .clearfix {
-	.clearfix();
+    .clearfix();
 }
 .center-block {
-	.center-block();
+    .center-block();
 }
 .center-full {
-	.center-full();
+    .center-full();
 }
 .pull-right {
-	float: right !important;
+    float: right !important;
 }
 .pull-left {
-	float: left !important;
+    float: left !important;
 }
 
 
@@ -28,16 +28,16 @@
 
 // Note: Deprecated .hide in favor of .hidden or .sr-only (as appropriate) in v3.0.1
 .hide {
-	display: none !important;
+    display: none !important;
 }
 .show {
-	display: block !important;
+    display: block !important;
 }
 .invisible {
-	visibility: hidden;
+    visibility: hidden;
 }
 .text-hide {
-	.text-hide();
+    .text-hide();
 }
 
 
@@ -46,7 +46,7 @@
 // Credit: HTML5 Boilerplate
 
 .hidden {
-	display: none !important;
+    display: none !important;
 }
 
 
@@ -54,7 +54,7 @@
 // -------------------------
 
 .affix {
-	position: fixed;
+    position: fixed;
 }
 
 // Positions
@@ -236,11 +236,11 @@
 //--------------------------
 .bg-secondary-opacity { background-color: rgba(134, 117, 77, 0.5);}
 .bg-secondary-gradient {
-	background: @secondary; /* For browsers that do not support gradients */
-	background: -webkit-linear-gradient(180deg, @secondary, @light); /* For Safari 5.1 to 6.0 */
-	background: -o-linear-gradient(180deg, @secondary, @light); /* For Opera 11.1 to 12.0 */
-	background: -moz-linear-gradient(180deg, @secondary, @light); /* For Firefox 3.6 to 15 */
-	background: linear-gradient(180deg, @secondary, @light); /* Standard syntax */
+    background: @secondary; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(180deg, @secondary, @light); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(180deg, @secondary, @light); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(180deg, @secondary, @light); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(180deg, @secondary, @light); /* Standard syntax */
 }
 .bg-color-quaternary{ background-color: @quaternary;}
 
@@ -257,15 +257,83 @@
 
 //Map
 //--------------------------
-			#canvas {
-				height: 500px; width: 100vw;
-			}
-			#paper {
-				height: 500px; width: 50%;
-			}
-			#sonora, #veracruz, #chiapas, #bcn, #bcs, #chihuahua, #coahuila, #nuevoleon ,#tamaulipas ,#sinaloa ,#durango ,#zacatecas, #sanluispotosi, #nayarit, #jalisco, #aguascalientes, #guanajuato, #queretaro, #hidalgo, #colima, #michoacan, #mexico, #distritofedera, #tlaxcala, #puebla, #guerrero, #morelos, #oaxaca, #tabasco, #campeche, #yucatan, #quintanaroo {
-				display: none;
-				// height: 400px;
-				width: 40%;
-				overflow: auto;
-			}
+            #canvas {
+                height: 500px; width: 100vw;
+            }
+            #paper {
+                height: 500px; width: 50%;
+            }
+            #sonora, #veracruz, #chiapas, #bcn, #bcs, #chihuahua, #coahuila, #nuevoleon ,#tamaulipas ,#sinaloa ,#durango ,#zacatecas, #sanluispotosi, #nayarit, #jalisco, #aguascalientes, #guanajuato, #queretaro, #hidalgo, #colima, #michoacan, #mexico, #distritofedera, #tlaxcala, #puebla, #guerrero, #morelos, #oaxaca, #tabasco, #campeche, #yucatan, #quintanaroo {
+                display: none;
+                // height: 400px;
+                width: 40%;
+                overflow: auto;
+            }
+
+
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #88a;
+  color: @light;
+}
+
+#canada-map {
+  fill: @light;
+  & #Veracruz{
+    fill:@gray;
+  }
+}
+
+#canada-map g {
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+#canada-map g:hover {
+  fill: @secondary;
+  cursor: pointer;
+}
+
+.active, .active:hover {
+  fill: @secondary;
+}
+
+#provinceInfo {
+  text-align: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40%;
+  background: rgba(0, 0, 0, 0.4);
+  padding: @padding-base-vertical;
+  pointer-events: none;
+  opacity: 0;
+  -webkit-transition: 1s;
+  transition: 1s;
+  @media all and (max-width: 800px) { width: 40%; }
+  @media all and (max-width: 750px) {
+    width: 100%;
+    position: static;
+    background: none;
+  }
+  &.show p {
+    color: @light;
+    margin-bottom: 2rem;
+  }
+  &.show { opacity: 1;}
+  & h1 {
+      background: @secondary;
+      padding: @padding-base-vertical;
+      text-align: center;
+      font-weight: 400;
+    }
+    & img {
+  width: 100%;
+    }
+}

@@ -1294,7 +1294,13 @@ h6,
   font-size: 12px;
 }
 p {
+  font-size: 16px;
   margin: 0 0 10px;
+}
+@media (min-width: 768px) {
+  p {
+    font-size: 18px;
+  }
 }
 .lead {
   margin-bottom: 20px;
@@ -7148,6 +7154,72 @@ button.close {
   display: none;
   width: 40%;
   overflow: auto;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  background: #88a;
+  color: #fff;
+}
+#canada-map {
+  fill: #fff;
+}
+#canada-map #Veracruz {
+  fill: #565656;
+}
+#canada-map g {
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+#canada-map g:hover {
+  fill: #86754d;
+  cursor: pointer;
+}
+.active,
+.active:hover {
+  fill: #86754d;
+}
+#provinceInfo {
+  text-align: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40%;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 6px;
+  pointer-events: none;
+  opacity: 0;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+@media all and (max-width: 800px) {
+  #provinceInfo {
+    width: 40%;
+  }
+}
+@media all and (max-width: 750px) {
+  #provinceInfo {
+    width: 100%;
+    position: static;
+    background: none;
+  }
+}
+#provinceInfo.show p {
+  color: #fff;
+  margin-bottom: 2rem;
+}
+#provinceInfo.show {
+  opacity: 1;
+}
+#provinceInfo h1 {
+  background: #86754d;
+  padding: 6px;
+  text-align: center;
+  font-weight: 400;
+}
+#provinceInfo img {
+  width: 100%;
 }
 @-ms-viewport {
   width: device-width;
