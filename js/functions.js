@@ -35,7 +35,10 @@ function imgToSvg(){
 	#TOGGLE FUNCTIONS
 \*------------------------------------*/
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 0a2eb11033d322946f85e4d32bbc48f95d00d5d2
 var canadamap = document.getElementById("canada-map"),
 	provinceInfo = document.getElementById("provinceInfo"),
 	allProvinces = canadamap.querySelectorAll("g");
