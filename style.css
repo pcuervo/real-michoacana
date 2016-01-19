@@ -7111,9 +7111,6 @@ button.close {
 .hr-gray {
   border-top: 1px solid #565656;
 }
-* {
-  box-sizing: border-box;
-}
 #canada-map {
   fill: #fff;
 }
