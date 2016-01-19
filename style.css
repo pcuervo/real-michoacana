@@ -7111,57 +7111,6 @@ button.close {
 .hr-gray {
   border-top: 1px solid #565656;
 }
-#canvas {
-  height: 500px;
-  width: 100vw;
-}
-#paper {
-  height: 500px;
-  width: 50%;
-}
-#sonora,
-#veracruz,
-#chiapas,
-#bcn,
-#bcs,
-#chihuahua,
-#coahuila,
-#nuevoleon,
-#tamaulipas,
-#sinaloa,
-#durango,
-#zacatecas,
-#sanluispotosi,
-#nayarit,
-#jalisco,
-#aguascalientes,
-#guanajuato,
-#queretaro,
-#hidalgo,
-#colima,
-#michoacan,
-#mexico,
-#distritofedera,
-#tlaxcala,
-#puebla,
-#guerrero,
-#morelos,
-#oaxaca,
-#tabasco,
-#campeche,
-#yucatan,
-#quintanaroo {
-  display: none;
-  width: 40%;
-  overflow: auto;
-}
-* {
-  box-sizing: border-box;
-}
-body {
-  background: #88a;
-  color: #fff;
-}
 #canada-map {
   fill: #fff;
 }
