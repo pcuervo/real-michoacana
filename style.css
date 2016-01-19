@@ -7114,8 +7114,8 @@ button.close {
 #canada-map {
   fill: #fff;
 }
-#canada-map #Veracruz {
-  fill: #565656;
+#canada-map #otros {
+  fill: #b3b3b3;
 }
 #canada-map g {
   -webkit-transition: .3s;
@@ -7163,6 +7163,7 @@ button.close {
 }
 #provinceInfo h1 {
   background: #86754d;
+  color: #fff;
   padding: 6px;
   text-align: center;
   font-weight: 400;
