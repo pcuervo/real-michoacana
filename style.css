@@ -7135,9 +7135,9 @@ button.close {
 #provinceInfo {
   text-align: center;
   position: absolute;
-  top: 0;
+  top: 0px;
   right: 0;
-  width: 40%;
+  width: 45%;
   background: rgba(0, 0, 0, 0.4);
   padding: 6px;
   pointer-events: none;
@@ -7145,21 +7145,19 @@ button.close {
   -webkit-transition: 1s;
   transition: 1s;
 }
-@media all and (max-width: 800px) {
-  #provinceInfo {
-    width: 40%;
-  }
-}
-@media all and (max-width: 750px) {
+@media all and (max-width: 480px) {
   #provinceInfo {
     width: 100%;
     position: static;
     background: none;
   }
+  #provinceInfo p {
+    color: #000 !important;
+  }
 }
 #provinceInfo.show p {
   color: #fff;
-  margin-bottom: 2rem;
+  font-size: 14px;
 }
 #provinceInfo.show {
   opacity: 1;
@@ -7169,7 +7167,6 @@ button.close {
   color: #fff;
   padding: 6px;
   text-align: center;
-  font-weight: 400;
 }
 #provinceInfo img {
   width: 100%;

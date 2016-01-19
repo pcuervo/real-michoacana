@@ -258,15 +258,11 @@
 //Map
 //--------------------------
 
-* {
-  box-sizing: border-box;
-}
+* {  box-sizing: border-box;}
 
 #canada-map {
   fill: @light;
-  & #otros{
-    fill:@gray-xlight;
-  }
+  & #otros{ fill:@gray-xlight; }
 }
 
 #canada-map g {
@@ -279,41 +275,36 @@
   cursor: pointer;
 }
 
-.active, .active:hover {
-  fill: @secondary;
-}
+.active, .active:hover { fill: @secondary; }
 
 #provinceInfo {
   text-align: center;
   position: absolute;
-  top: 0;
+  top: 0px;
   right: 0;
-  width: 40%;
+  width: 45%;
   background: rgba(0, 0, 0, 0.4);
   padding: @padding-base-vertical;
   pointer-events: none;
   opacity: 0;
   -webkit-transition: 1s;
   transition: 1s;
-  @media all and (max-width: 800px) { width: 40%; }
-  @media all and (max-width: 750px) {
+  @media all and (max-width: 480px) {
     width: 100%;
     position: static;
     background: none;
+    & p{ color: @gray-base!important;}
   }
   &.show p {
     color: @light;
-    margin-bottom: 2rem;
-  }
+    font-size: 14px;
+}
   &.show { opacity: 1;}
   & h1 {
       background: @secondary;
       color: @light;
       padding: @padding-base-vertical;
       text-align: center;
-      font-weight: 400;
     }
-    & img {
-  width: 100%;
-    }
+    & img { width: 100%; }
 }
