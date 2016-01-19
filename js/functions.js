@@ -37,9 +37,9 @@ function imgToSvg(){
 
 function map(){
 
-	var R = Raphael("paper", 800, 800);
+	var R = Raphael("paper", 700, 450);
 			var attr = {
-				fill: "#333",
+				fill: "#fff",
 				stroke: "#666",
 				"stroke-width": 1,
 				"stroke-linejoin": "round"
@@ -83,7 +83,7 @@ function map(){
 				(function (st, state) {
 					st[0].style.cursor = "pointer";
 					st[0].onmouseover = function () {
-						current && aus[current].animate({fill: "#333", stroke: "#666"}, 500) && (document.getElementById(current).style.display = "");
+						current && aus[current].animate({fill: "#fff", stroke: "#666"}, 500) && (document.getElementById(current).style.display = "");
 						st.animate({fill: st.color, stroke: "#ccc"}, 500);
 						st.toFront();
 						R.safari();
@@ -91,7 +91,7 @@ function map(){
 						current = state;
 					};
 					st[0].onmouseout = function () {
-						st.animate({fill: "#333", stroke: "#666"}, 500);
+						st.animate({fill: "#fff", stroke: "#666"}, 500);
 						st.toFront();
 						R.safari();
 					};

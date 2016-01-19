@@ -7106,17 +7106,12 @@ button.close {
   border-top: 1px solid #565656;
 }
 #canvas {
-  height: 800px;
-  left: 50%;
-  margin: 0px 0 0 0px;
-  top: 50%;
-  width: 800px;
+  height: 500px;
+  width: 100vw;
 }
 #paper {
-  height: 800px;
-  left: 0;
-  top: 0;
-  width: 800px;
+  height: 500px;
+  width: 50%;
 }
 #sonora,
 #veracruz,
@@ -7151,12 +7146,8 @@ button.close {
 #yucatan,
 #quintanaroo {
   display: none;
-  height: 400px;
+  width: 40%;
   overflow: auto;
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 300px;
 }
 @-ms-viewport {
   width: device-width;
@@ -7390,8 +7381,7 @@ header {
 footer {
   padding-top: 12px;
   padding-bottom: 12px;
-  border: solid 8px #86754d;
-  background-color: #001689;
+  background-color: #565656;
   color: #fff;
   text-align: center;
 }
