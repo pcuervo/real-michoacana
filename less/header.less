@@ -9,24 +9,25 @@ header{
 
 .logo{
 	.absolute;
-	width: 150px; 
+    width: 150px; 
     z-index: 1060;
     @media (min-width: 480px){ 
     	.static;
-    	width: 300px; 
+    	width: 170px; 
     }
 }
 
 .modal-body ul li{
-      list-style-type:none;
-      font-weight: 700;
-      font-size: 1.2em;
-      .color-tertiary;
-  }
+    list-style-type:none;
+    font-weight: 700;
+    font-size: 1.2em;
+    .color-tertiary;
+}
 
 .menu-desktop {
   .absolute; right: 0; top: 60px;
-  @media (min-width: @screen-md) { 
+  @media (min-width: @screen-md) {
+    top: 45px; 
     right: 120px;
     font-size: 20px;
   }
