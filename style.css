@@ -1304,13 +1304,13 @@ p {
 }
 .lead {
   margin-bottom: 20px;
-  font-size: 16px;
+  font-size: 22px;
   font-weight: 300;
   line-height: 1.4;
 }
 @media (min-width: 768px) {
   .lead {
-    font-size: 21px;
+    font-size: 49px;
   }
 }
 small,
@@ -1345,6 +1345,12 @@ mark,
 }
 .text-capitalize {
   text-transform: capitalize;
+}
+.text-bold {
+  font-weight: 700;
+}
+.letter-spacing {
+  letter-spacing: .05em;
 }
 .text-muted {
   color: #777777;
@@ -1383,6 +1389,9 @@ a.text-warning:focus {
 a.text-danger:hover,
 a.text-danger:focus {
   color: #843534;
+}
+.text-shadow {
+  text-shadow: 3px 3px 5px rgba(8, 8, 8, 0.5);
 }
 .bg-primary {
   color: #fff;
@@ -5964,6 +5973,20 @@ button.close {
 .rectangle {
   height: 250px;
 }
+.img-main {
+  width: 50px;
+}
+@media (min-width: 480px) {
+  .img-main {
+    width: 120px;
+  }
+}
+@media (min-width: 992px) {
+  .img-main {
+    width: 240px;
+    margin-bottom: 45%;
+  }
+}
 .modal-open {
   overflow: hidden;
 }
@@ -6701,7 +6724,7 @@ button.close {
   text-decoration: none;
 }
 .color-primary {
-  color: #001689;
+  color: #121540;
 }
 .color-secondary {
   color: #86754d;
@@ -6713,7 +6736,7 @@ button.close {
   color: #fff;
 }
 .bg-primary {
-  background-color: #001689;
+  background-color: #121540;
 }
 .bg-secondary {
   background-color: #86754d;
@@ -6756,6 +6779,9 @@ button.close {
 }
 .height-rectangle {
   height: 150px;
+}
+.height-100 {
+  height: 100vh;
 }
 .no-padding {
   padding: 0 !important;
@@ -7391,10 +7417,13 @@ header {
   padding-bottom: 24px;
 }
 .logo {
+  position: absolute;
   width: 150px;
+  z-index: 1060;
 }
 @media (min-width: 480px) {
   .logo {
+    position: static;
     width: 300px;
   }
 }
@@ -7404,10 +7433,21 @@ header {
   font-size: 1.2em;
   color: #d3b50e;
 }
+.menu-desktop {
+  position: absolute;
+  right: 0;
+  top: 60px;
+}
+@media (min-width: 992px) {
+  .menu-desktop {
+    right: 120px;
+    font-size: 20px;
+  }
+}
 footer {
   padding-top: 12px;
   padding-bottom: 12px;
-  background-color: #565656;
+  background-color: #121540;
   color: #fff;
   text-align: center;
 }
