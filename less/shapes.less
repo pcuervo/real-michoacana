@@ -1,0 +1,98 @@
+//
+// Sapes classes
+// --------------------------------------------------
+
+.circle {
+	width: 100px; height: 100px;
+	background-color: @tertiary ;
+	-moz-border-radius:50px;
+	-webkit-border-radius:50px;
+	border-radius:50px;
+}
+
+.badge-12 {
+	background: @tertiary;
+	width:80px; height:80px;
+	position:relative;
+	text-align:center;
+}
+
+.badge-12:before, .badge-12:after {
+	content:"";
+	position:absolute; top:0; left:0;
+	height:80px; width:80px; background:red;
+}
+
+.badge-12:before {
+	-webkit-transform:rotate(30deg);
+	-moz-transform:rotate(30deg);
+	-ms-transform:rotate(30deg);
+	-o-transform:rotate(30deg);
+}
+
+.badge-12:after {
+	-webkit-transform:rotate(60deg);
+	-moz-transform:rotate(60deg);
+	-ms-transform:rotate(60deg);
+	-o-transform:rotate(60deg);
+}
+
+.ribbon{
+	width: 120px; height: 0px;
+	border-top: 35px solid @primary--medium; border-bottom: 35px solid @primary--medium;
+}
+
+.ribbon--left {
+	margin-right: -50px;
+	border-left: 35px solid transparent;
+}
+
+.ribbon--right {
+	margin-left: -50px;
+	border-right: 35px solid transparent;
+}
+
+.paralelogramo--left {
+	width: 150px;
+	height: 100px;
+	background: @primary;
+	-webkit-transform: skew(-20deg);
+	-moz-transform: skew(-20deg);
+	-ms-transform: skew(-20deg);
+	-o-transform: skew(-20deg);
+	transform: skew(-20deg);
+}
+.paralelogramo--right {
+	width: 150px;
+	height: 100px;
+	background: @primary;
+	-webkit-transform: skew(20deg);
+	-moz-transform: skew(20deg);
+	-ms-transform: skew(20deg);
+	-o-transform: skew(20deg);
+	transform: skew(20deg);
+
+}
+
+.angulo-{
+	-webkit-transform: rotate(15deg);
+	-moz-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+}
+
+.rectangle-angle{
+	width: 0px; height: 50px;
+	border-top: 16px solid transparent;
+	position: absolute;
+	margin-top: 3px;
+}
+
+.rectangle-angle--left{
+	border-right: 50px solid @primary--dark;
+}
+
+.rectangle-angle--right{
+	border-left: 50px solid @primary--dark;
+	margin-left: -53px;
+}
+
