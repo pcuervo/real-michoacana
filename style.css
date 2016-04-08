@@ -6009,6 +6009,12 @@ button.close {
 .bg-image-nosotros {
   background-image: url('img/icecream.png');
 }
+.bg-image-producto {
+  background-image: url('img/productos/icecream_1.png');
+}
+.bg-image-producto_2 {
+  background-image: url('img/productos/icecream_4.png');
+}
 .circle {
   width: 100px;
   height: 100px;
