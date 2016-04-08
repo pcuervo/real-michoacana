@@ -6825,6 +6825,9 @@ button.close {
 .top--35 {
   top: -35px;
 }
+.top--95 {
+  top: -95px;
+}
 .top--70 {
   top: -70px;
 }
@@ -6924,8 +6927,14 @@ button.close {
 .width--50 {
   width: 50px;
 }
+.width-160 {
+  width: 160px;
+}
 .width-200 {
   width: 200px;
+}
+.width-250 {
+  width: 250px;
 }
 .height-rectangle {
   height: 150px;
@@ -6935,6 +6944,12 @@ button.close {
 }
 .height-300 {
   height: 300px;
+}
+.height-110 {
+  max-height: 110px;
+}
+.height-280 {
+  max-height: 280px;
 }
 @media (min-width: 768px) {
   .height-variable {
