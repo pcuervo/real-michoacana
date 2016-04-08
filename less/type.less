@@ -32,7 +32,7 @@ h1, h2, h3, h4, h5, h6,
 h1, .h1,
 h2, .h2,
 h3, .h3 {
-  margin-top: @line-height-computed;
+  margin-top: 0px;
   margin-bottom: (@line-height-computed / 2);
 
   small,
@@ -71,6 +71,7 @@ p {
   font-size: 16px;
   @media (min-width: @screen-sm) { font-size: 18px;}
   margin: 0 0 (@line-height-computed / 2);
+  line-height: @line-height-base;
 }
 
 .lead {
@@ -186,7 +187,15 @@ ol {
   ol {
     margin-bottom: 0;
   }
+  li{
+    margin-bottom: (@margin-base/2);
+    font-size: 15px;
+    @media (min-width: @screen-sm) { font-size: 17px;}
+    line-height: @line-height-base;
+  }
 }
+
+ol{ padding-left: 12px; }
 
 // List options
 

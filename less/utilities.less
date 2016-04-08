@@ -98,6 +98,7 @@
 .bg-primary--dark { background-color: @primary--dark;}
 .bg-secondary { background-color: @secondary;}
 .bg-tertiary { background-color: @tertiary;}
+.bg-light { background-color: @light; }
 
 
 //Box model
@@ -117,6 +118,7 @@
 
 .height-rectangle{height: 150px;}
 .height-100 { height: 100vh;}
+.height-300 { height: 300px; }
 
 // Padding
 // -------------------------
@@ -185,6 +187,8 @@
 .padding-left--small--xs{ @media (max-width: 767px) { padding-left: (@padding-base-vertical); } }
 .padding-left--small--sm{ @media (min-width: @screen-sm) { padding-left: (@padding-base-vertical); } }
 .padding-left--small--md{ @media (min-width: @screen-md) { padding-left: (@padding-base-vertical); } }
+
+.no-padding-left--xs{ @media (max-width: @screen-sm) { padding-left: 0px; } }
 
 // Margin
 // -------------------------
@@ -303,7 +307,7 @@
     & p{ color: @gray!important;}
   }
    @media (min-width: @screen-md) {
-    width: 20%;
+    width: 40%;
     font-size: 16px;
     }
   &.show p {
