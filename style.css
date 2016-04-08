@@ -6907,6 +6907,9 @@ button.close {
 .width--50 {
   width: 50px;
 }
+.width-200 {
+  width: 200px;
+}
 .height-rectangle {
   height: 150px;
 }
@@ -7043,6 +7046,12 @@ button.close {
   .padding-sides--xsm--large {
     padding-left: 15%;
     padding-right: 15%;
+  }
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .padding-sides--xsm--xlarge {
+    padding-left: 25%;
+    padding-right: 25%;
   }
 }
 .no-padding-right {
