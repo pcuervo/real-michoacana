@@ -5984,6 +5984,43 @@ button.close {
 .bg-image-nosotros {
   background-image: url('img/icecream.png');
 }
+.circle {
+  width: 100px;
+  height: 100px;
+  background-color: #d3b50e;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+}
+.badge-12 {
+  background: #d3b50e;
+  width: 80px;
+  height: 80px;
+  position: relative;
+  text-align: center;
+}
+.badge-12:before,
+.badge-12:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 80px;
+  width: 80px;
+  background: red;
+}
+.badge-12:before {
+  -webkit-transform: rotate(30deg);
+  -moz-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  -o-transform: rotate(30deg);
+}
+.badge-12:after {
+  -webkit-transform: rotate(60deg);
+  -moz-transform: rotate(60deg);
+  -ms-transform: rotate(60deg);
+  -o-transform: rotate(60deg);
+}
 .modal-open {
   overflow: hidden;
 }
@@ -6791,6 +6828,11 @@ button.close {
 }
 .padding-large {
   padding: 24px 48px;
+}
+@media (min-width: 768px) {
+  .padding-large--sm {
+    padding: 24px 48px;
+  }
 }
 .padding-top {
   padding-top: 12px;
