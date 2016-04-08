@@ -51,7 +51,7 @@
 
 	</head>
 	<body>
-		<header class="[ container ]">
+		<header class="[ js-header ][ container ]">
 
 		 	<a href="index.html">
 				<img class="[ logo ]" src="img/logo.png">
@@ -97,53 +97,53 @@
 			</div>
 
 		</header>
-
-		<article class="[ bg-color-quaternary ][ color-gray ]">
-				<div class="[ container ][ padding-top-bottom--xlarge padding-top-bottom--xxxxlarge--sm ]">
-					<div class="[ row ]">
-						<div class="[ col-xs-12 col-sm-6 col-md-4 col-md-offset-1 ]">
-							<h2 class="[ margin-bottom--small ][ color-primary ][ text-center text-uppercase ]">Corporativo</h2>
-							<hr class="[ hr-gray ][ width--50 ][ no-margin--top ]">
-							<p class="[ color-gray ][ padding-sides--xsm--large ]">Fracción 3 Carretera Cuautitlán-Tepotzotlán km 3 s/n, Col. San Mateo, Iztacalco, C.P. 54713, Cuautitlan Izcalli, Estado de México</p>
-						</div>
-						<div class="[ col-xs-12 col-sm-6 col-md-5 col-md-offset-1 ]">
-							<h2 class="[ text-uppercase ][ text-center ][ no-margin--top margin-bottom--small ][ color-primary ]">Póngase en contacto</h2>
-							<hr class="[ hr-gray ][ width--50 ][ no-margin--top ]">
-							<form class="[ form-inline ]">
-								<div class="[ form-group ]">
-									<label class="">Name</label>
-									<input type="text" class="form-control [ no-border-radius ]">
-								</div>
-								<div class="[ form-group ]">
-									<label class="">Mail</label>
-									<input type="text" class="form-control [ no-border-radius ]">
-								</div>
-								<div class="[ form-group ]">
-									<label class="">Mensaje</label>
-									<textarea class="form-control [ no-border-radius ][ margin-bottom--small ]" rows="4"></textarea>
-								</div>
-								<button type="submit" class="[ btn btn-secondary width-100 ]">enviar</button>
-							</form>
+		<div class="[ main ][ bg-color-quaternary ]">
+			<article class="[ color-gray ]">
+					<div class="[ container ][ padding-top-bottom--xlarge ]">
+						<div class="[ row ]">
+							<div class="[ col-xs-12 col-sm-6 col-md-4 col-md-offset-1 ]">
+								<h2 class="[ margin-bottom--small ][ color-primary ][ text-center text-uppercase ]">Corporativo</h2>
+								<hr class="[ hr-gray ][ width--50 ][ no-margin--top ]">
+								<p class="[ color-gray ][ padding-sides--xsm--large ]">Fracción 3 Carretera Cuautitlán-Tepotzotlán km 3 s/n, Col. San Mateo, Iztacalco, C.P. 54713, Cuautitlan Izcalli, Estado de México</p>
+							</div>
+							<div class="[ col-xs-12 col-sm-6 col-md-5 col-md-offset-1 ]">
+								<h2 class="[ text-uppercase ][ text-center ][ no-margin--top margin-bottom--small ][ color-primary ]">Póngase en contacto</h2>
+								<hr class="[ hr-gray ][ width--50 ][ no-margin--top ]">
+								<form class="[ form-inline ]">
+									<div class="[ form-group ]">
+										<label class="">Name</label>
+										<input type="text" class="form-control [ no-border-radius ]">
+									</div>
+									<div class="[ form-group ]">
+										<label class="">Mail</label>
+										<input type="text" class="form-control [ no-border-radius ]">
+									</div>
+									<div class="[ form-group ]">
+										<label class="">Mensaje</label>
+										<textarea class="form-control [ no-border-radius ][ margin-bottom--small ]" rows="4"></textarea>
+									</div>
+									<button type="submit" class="[ btn btn-secondary width-100 ]">enviar</button>
+								</form>
+							</div>
 						</div>
 					</div>
+			</article>
+
+			<footer class="[]">
+				<img class="[ margin-bottom--small ]" src="img/corona.png">
+				<p>ventas@larealmichoacana.com.mx</p>
+				<p>+52 (55) 5662-6600</p>
+				<p class="[ margin-bottom ]">Lada sin costo: 01 800 523 1320</p>
+				<div class="[ margin-bottom--small ]">
+					<a class="[ bg-social-media ][ margin-right--small ]">
+						<img class="[ svg ][ icon icon--iconed icon--fill ][ color-light ]" src="icons/twitter.svg">
+					</a>
+					<a class="[ bg-social-media ]">
+						<img class="[ svg ][ icon icon--iconed icon--fill ][ color-light ]" src="icons/facebook.svg">
+					</a>
 				</div>
-		</article>
-
-		<footer class="[]">
-			<img class="[ margin-bottom--small ]" src="img/corona.png">
-			<p>ventas@larealmichoacana.com.mx</p>
-			<p>+52 (55) 5662-6600</p>
-			<p class="[ margin-bottom ]">Lada sin costo: 01 800 523 1320</p>
-			<div class="[ margin-bottom--small ]">
-				<a class="[ bg-social-media ][ margin-right--small ]">
-					<img class="[ svg ][ icon icon--iconed icon--fill ][ color-light ]" src="icons/twitter.svg">
-				</a>
-				<a class="[ bg-social-media ]">
-					<img class="[ svg ][ icon icon--iconed icon--fill ][ color-light ]" src="icons/facebook.svg">
-				</a>
-			</div>
-		</footer>
-
+			</footer>
+		</div>
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.0/js/bootstrap.min.js"></script>
 		<script src="js/functions.js"></script>
@@ -155,9 +155,13 @@
 				**/
 				imgToSvg();
 				/**
+				 * On ready
+				**/
+				footerBottom();
+				/**
 				 * Triggered events
 				**/
-
+				$(window).resize(function () { footerBottom(); });
 			});
 		</script>
 

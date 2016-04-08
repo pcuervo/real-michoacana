@@ -55,3 +55,28 @@ var canadamap = document.getElementById("canada-map"),
 		provinceInfo.classList.add("show");
 		}
 	})
+
+//Footer
+
+function footerBottom(){
+    var alturaFooter = getFooterHeight();
+    $('.main').css('padding-bottom', alturaFooter );
+}
+
+/*------------------------------------*\
+    #GET/SET FUNCTIONS
+\*------------------------------------*/
+
+/**
+ * Get header's height
+ */
+function getHeaderHeight(){
+    return $('.js-header').outerHeight();
+}// getHeaderHeight
+
+/**
+ * Get footer's height
+ */
+function getFooterHeight(){
+    return $('footer').outerHeight();
+}// getFooterHeight
