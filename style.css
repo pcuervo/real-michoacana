@@ -6951,6 +6951,11 @@ button.close {
     min-height: 250px;
   }
 }
+@media (min-width: 768px) {
+  .height-variable--small {
+    min-height: 215px;
+  }
+}
 .no-padding {
   padding: 0 !important;
 }
