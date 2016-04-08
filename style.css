@@ -6936,6 +6936,21 @@ button.close {
 .height-300 {
   height: 300px;
 }
+@media (min-width: 768px) {
+  .height-variable {
+    min-height: 400px;
+  }
+}
+@media (min-width: 992px) {
+  .height-variable {
+    min-height: 300px;
+  }
+}
+@media (min-width: 1200px) {
+  .height-variable {
+    min-height: 250px;
+  }
+}
 .no-padding {
   padding: 0 !important;
 }
@@ -7290,6 +7305,12 @@ button.close {
 }
 .bg-secondary-opacity {
   background-color: rgba(134, 117, 77, 0.5);
+}
+.bg-secondary-opacity--strong {
+  background-color: rgba(134, 117, 77, 0.8);
+}
+.bg-primary-opacity {
+  background-color: rgba(37, 49, 96, 0.5);
 }
 .bg-secondary-gradient {
   background: #86754d;
