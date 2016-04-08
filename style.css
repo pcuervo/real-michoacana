@@ -5981,6 +5981,9 @@ button.close {
     width: 120px;
   }
 }
+.bg-image-nosotros {
+  background-image: url('img/icecream.png');
+}
 .modal-open {
   overflow: hidden;
 }
