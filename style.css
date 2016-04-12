@@ -6849,6 +6849,9 @@ button.close {
 .z-index--100 {
   z-index: 100;
 }
+.z-index--2000 {
+  z-index: 2000;
+}
 .block {
   display: block;
 }
@@ -6887,6 +6890,15 @@ button.close {
 }
 .color-light {
   color: #fff;
+}
+.color-dark {
+  color: #000;
+}
+.color-gray {
+  color: #565656;
+}
+.color-gray-lighter {
+  color: #eeeeee;
 }
 .bg-primary {
   background-color: #253160;
@@ -7017,6 +7029,11 @@ button.close {
 }
 .padding-top--xxlarge {
   padding-top: 48px;
+}
+@media (min-width: 768px) {
+  .padding-top--xxxlarge-sm {
+    padding-top: 72px;
+  }
 }
 .padding-bottom {
   padding-bottom: 12px;
@@ -7392,15 +7409,6 @@ button.close {
 .bg-color-quaternary {
   background-color: #bbb39e;
 }
-.color-light {
-  color: #fff;
-}
-.color-dark {
-  color: #000;
-}
-.color-gray {
-  color: #565656;
-}
 .hr-gray {
   border-top: 1px solid #565656;
 }
@@ -7682,7 +7690,6 @@ button.close {
   }
 }
 header {
-  background-color: rgba(255, 255, 255, 0.5);
   padding-top: 24px;
   padding-bottom: 24px;
 }
