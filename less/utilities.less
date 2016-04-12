@@ -186,6 +186,7 @@
 .padding-sides--xsm--xlarge{  @media (min-width: 480px) and (max-width: 767px) {  padding-left: 25%; padding-right: 25%; }}     //Padding xs (480px-768px)
 
 .padding-sides--md--xsmall{  @media (min-width: @screen-md) {  padding-left: 7%; padding-right: 7%; }}     //Padding md
+.padding-sides--md--xlarge{  @media (min-width: @screen-md) { padding-left: (@padding-base-horizontal*6); padding-right: (@padding-base-horizontal*6); }}     //Padding md
 
 .no-padding-right{ padding-right: 0; }
 .padding-right{ padding-right: (@padding-base-vertical*2); }
@@ -263,11 +264,20 @@
 .no-border{ border: none; }
 .no-border-radius{ border-radius: 0px;}
 
+.border-radius{ border-radius: 30px; }
+
 // Background-color
 //--------------------------
 .bg-secondary-opacity { background-color: rgba(134, 117, 77, 0.5);}
 .bg-secondary-opacity--strong { background-color: rgba(134, 117, 77, 0.8);}
 .bg-primary-opacity { background-color: rgba(37, 49, 96, 0.5);}
+.bg-primary-gradient {
+    background: @primary; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(180deg, @primary, @light); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(180deg, @primary, @light); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(180deg, @primary, @light); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(180deg, @primary, @light); /* Standard syntax */
+}
 .bg-secondary-gradient {
     background: @secondary; /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(180deg, @secondary, @light); /* For Safari 5.1 to 6.0 */
@@ -275,6 +285,15 @@
     background: -moz-linear-gradient(180deg, @secondary, @light); /* For Firefox 3.6 to 15 */
     background: linear-gradient(180deg, @secondary, @light); /* Standard syntax */
 }
+
+.bg-tertiary-gradient {
+    background: @tertiary; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(180deg, @tertiary, @light); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(180deg, @tertiary, @light); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(180deg, @tertiary, @light); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(180deg, @tertiary, @light); /* Standard syntax */
+}
+
 .bg-color-quaternary{ background-color: @quaternary;}
 
 
@@ -287,6 +306,7 @@
 // hr
 //--------------------------
 .hr-gray{ border-top: 1px solid @gray; }
+.hr-tertiary{ border-top: 1px solid @tertiary; }
 
 //Map
 //--------------------------
