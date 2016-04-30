@@ -6032,6 +6032,15 @@ button.close {
 .bg-image-producto_2 {
   background-image: url('img/productos/icecream_4.png');
 }
+.bg-image-001 {
+  background-image: url('img/Helado001.png');
+}
+.bg-image-002 {
+  background-image: url('img/Helado002.png');
+}
+.bg-image-003 {
+  background-image: url('img/Helado003.png');
+}
 .circle {
   width: 100px;
   height: 100px;
@@ -7031,6 +7040,11 @@ button.close {
   padding-top: 48px;
 }
 @media (min-width: 768px) {
+  .padding-top--xxlarge-sm {
+    padding-top: 48px;
+  }
+}
+@media (min-width: 768px) {
   .padding-top--xxxlarge-sm {
     padding-top: 72px;
   }
@@ -7278,6 +7292,11 @@ button.close {
 .margin-top--xxlarge {
   margin-top: 160px;
 }
+@media (min-width: 992px) {
+  .margin-top--xlarge--md {
+    margin-top: 80px;
+  }
+}
 .no-margin-top-bottom {
   margin-top: 0;
   margin-bottom: 0;
@@ -7370,6 +7389,9 @@ button.close {
 .bg-primary-opacity {
   background-color: rgba(37, 49, 96, 0.5);
 }
+.bg-light-opacity {
+  background-color: rgba(255, 255, 255, 0.5);
+}
 .bg-primary-gradient {
   background: #253160;
   /* For browsers that do not support gradients */
@@ -7397,13 +7419,13 @@ button.close {
 .bg-tertiary-gradient {
   background: #d3b50e;
   /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(180deg, #d3b50e, #fff);
+  background: -webkit-linear-gradient(180deg, #d3b50e, transparent);
   /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(180deg, #d3b50e, #fff);
+  background: -o-linear-gradient(180deg, #d3b50e, transparent);
   /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(180deg, #d3b50e, #fff);
+  background: -moz-linear-gradient(180deg, #d3b50e, transparent);
   /* For Firefox 3.6 to 15 */
-  background: linear-gradient(180deg, #d3b50e, #fff);
+  background: linear-gradient(180deg, #d3b50e, transparent);
   /* Standard syntax */
 }
 .bg-color-quaternary {
@@ -7419,7 +7441,7 @@ button.close {
   fill: #fff;
 }
 #canada-map #otros {
-  fill: #b3b3b3;
+  fill: rgba(37, 49, 96, 0.4);
 }
 #canada-map g {
   -webkit-transition: .3s;
@@ -7441,6 +7463,7 @@ button.close {
   width: 45%;
   background: rgba(0, 0, 0, 0.4);
   padding: 6px;
+  border-radius: 15px;
   pointer-events: none;
   opacity: 0;
   -webkit-transition: 1s;
@@ -7470,9 +7493,10 @@ button.close {
   opacity: 1;
 }
 #provinceInfo h1 {
-  background: #86754d;
+  background: #253160;
   color: #fff;
   padding: 6px;
+  border-radius: 10px;
   text-align: center;
   font-size: 20px;
 }

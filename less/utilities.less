@@ -159,6 +159,7 @@
 .padding-top--xlarge{ padding-top: (@padding-base-vertical*6); }
 .padding-top--xxlarge{ padding-top: (@padding-base-vertical*8); }
 
+.padding-top--xxlarge-sm{ @media (min-width:  @screen-sm){ padding-top: (@padding-base-vertical*8); } }
 .padding-top--xxxlarge-sm{ @media (min-width:  @screen-sm){ padding-top: (@padding-base-vertical*12); } }
 
 .padding-bottom{ padding-bottom: (@padding-base-vertical*2); }
@@ -241,6 +242,8 @@
 .margin-top--xlarge{ margin-top: (@margin-base*4); }
 .margin-top--xxlarge{ margin-top: (@margin-base*8); }
 
+.margin-top--xlarge--md{ @media (min-width: @screen-md) { margin-top: (@margin-base*4); } }
+
 .no-margin-top-bottom{ margin-top:0; margin-bottom:0; }
 .margin-top-bottom--xsmall{ margin-top: (@margin-base/4); margin-bottom: (@margin-base/4); }
 .margin-top-bottom--small{ margin-top: (@margin-base/2); margin-bottom: (@margin-base/2); }
@@ -278,6 +281,8 @@
 .bg-secondary-opacity { background-color: rgba(134, 117, 77, 0.5);}
 .bg-secondary-opacity--strong { background-color: rgba(134, 117, 77, 0.8);}
 .bg-primary-opacity { background-color: rgba(37, 49, 96, 0.5);}
+.bg-light-opacity { background-color: fadeout(@light, 50%); }
+
 .bg-primary-gradient {
     background: @primary; /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(180deg, @primary, @light); /* For Safari 5.1 to 6.0 */
@@ -295,10 +300,10 @@
 
 .bg-tertiary-gradient {
     background: @tertiary; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(180deg, @tertiary, @light); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(180deg, @tertiary, @light); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(180deg, @tertiary, @light); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(180deg, @tertiary, @light); /* Standard syntax */
+    background: -webkit-linear-gradient(180deg, @tertiary, @transparent); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(180deg, @tertiary, @transparent); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(180deg, @tertiary, @transparent); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(180deg, @tertiary, @transparent); /* Standard syntax */
 }
 
 .bg-color-quaternary{ background-color: @quaternary;}
@@ -315,7 +320,7 @@
 #canada-map {
 
   fill: @light;
-  & #otros{ fill:@gray-xlight; }
+  & #otros{ fill:fadeout(@primary, 60%); }
 }
 
 #canada-map g {
@@ -338,6 +343,7 @@
   width: 45%;
   background: rgba(0, 0, 0, 0.4);
   padding: @padding-base-vertical;
+  border-radius: 15px;
   pointer-events: none;
   opacity: 0;
   -webkit-transition: 1s;
@@ -358,9 +364,10 @@
 }
   &.show { opacity: 1;}
   & h1 {
-      background: @secondary;
+      background: @primary;
       color: @light;
       padding: @padding-base-vertical;
+      border-radius: 10px;
       text-align: center;
       font-size: 20px;
     }
