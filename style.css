@@ -5944,6 +5944,10 @@ button.close {
   width: 100%;
   height: auto;
 }
+.icon--iconed--large {
+  width: 50px !important;
+  height: 50px;
+}
 .icon--iconed--small {
   width: 25px !important;
   height: 25px;
@@ -7388,6 +7392,9 @@ button.close {
 }
 .bg-primary-opacity {
   background-color: rgba(37, 49, 96, 0.5);
+}
+.bg-primary-opacity--strong {
+  background-color: rgba(37, 49, 96, 0.8);
 }
 .bg-light-opacity {
   background-color: rgba(255, 255, 255, 0.5);
