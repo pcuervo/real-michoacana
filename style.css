@@ -3064,6 +3064,10 @@ select[multiple].input-lg {
     font-size: 12px;
   }
 }
+form ul.parsley-errors-list {
+  background-color: #f4cecd;
+  color: #d9534f;
+}
 .btn {
   display: inline-block;
   margin-bottom: 0;
@@ -7448,7 +7452,7 @@ button.close {
   fill: #fff;
 }
 #canada-map #otros {
-  fill: rgba(37, 49, 96, 0.4);
+  fill: #253160;
 }
 #canada-map g {
   -webkit-transition: .3s;

@@ -113,21 +113,27 @@
 						<p class="[ color-light ][ text-shadow ][ padding-sides--xsm--large ]">Fracción 3 Carretera Cuautitlán-Tepotzotlán km 3 s/n, Col. San Mateo, Iztacalco, C.P. 54713, Cuautitlan Izcalli, Estado de México</p>
 					</div>
 					<div class="[ col-xs-12 col-sm-6 col-md-5 col-md-offset-1 ][ bg-primary ][ border-radius ][ padding-top-bottom--xxlarge padding-sides padding-sides--md--xlarge ]">
-						<form class="[ form-inline ]">
+						<form class="[ form-inline ][ js-form-contacto ][ js-form-container ]">
 							<div class="[ form-group ]">
-								<label class="">Nombre</label>
-								<input type="text" class="form-control [ no-border-radius ]">
+								<label class="">Name</label>
+								<input type="text" class="[ form-control ][ no-border-radius ]" name="nombre" placeholder="Nombre" data-parsley-error-message="Este campo es obligatorio" required>
 							</div>
 							<div class="[ form-group ]">
-								<label class="">Correo</label>
-								<input type="text" class="form-control [ no-border-radius ]">
+								<label class="">Mail</label>
+								<input type="email" class="[ form-control ][ no-border-radius ]" name="correo" data-parsley-type="email" data-parsley-required-message="Este campo es obligatorio" data-parsley-type-message="Por favor ingresa un correo electrónico válido." required >
 							</div>
 							<div class="[ form-group ]">
 								<label class="">Mensaje</label>
-								<textarea class="form-control [ no-border-radius ][ margin-bottom--small ]" rows="4"></textarea>
+								<textarea class="form-control [ no-border-radius ][ margin-bottom--small ]" rows="4" name="mensaje" placeholder="Mensaje" data-parsley-error-message="Este campo es obligatorio" required></textarea>
 							</div>
 							<button type="submit" class="[ btn btn-secondary width-100 ]">enviar</button>
 						</form>
+						<!-- Confirmacion formulario -->
+						<div class="[ hidden ][ text-center ][ center-block ][ js-thankyou ]">
+							<img class="[ margin-bottom--small ]" src="img/corona.png">
+							<p class="[ text-tertiary ]">¡Gracias por contactarnos <span class="[ js-name ]"></span>,</p>
+							<p>Nos comunicaremos lo antes posible</p>
+						</div>
 					</div>
 				</div> <!-- /row-->
 				<div class="[ row ][ text-center ]">
@@ -293,11 +299,19 @@
 				/**
 				 * On ready
 				**/
+				$('.js-form-contacto').parsley();
+
 				footerBottom();
 				/**
 				 * Triggered events
 				**/
 				$(window).resize(function () { footerBottom(); });
+
+				$('.js-form-contacto').on('submit', function(e){
+					e.preventDefault();
+					sendContactEmail( this );
+				});
+
 			});
 		</script>
 

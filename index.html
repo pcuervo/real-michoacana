@@ -291,21 +291,27 @@
 								<h4 class="[ visible-xs ][ center-full width-100 ][ no-margin ][ color-light letter-spacing text-center text-shadow text-uppercase text-bold ]">Póngase en contacto</h4>
 							</div>
 							<div class="[ col-xs-12 col-sm-6 col-sm-offset-3 ][ bg-primary ][ border-radius ][ padding-top-bottom--xxlarge padding-sides padding-sides--md--xlarge ]">
-								<form class="[ form-inline ]">
+								<form class="[ form-inline ][ js-form-contacto ][ js-form-container ]">
 									<div class="[ form-group ]">
 										<label class="">Name</label>
-										<input type="text" class="form-control [ no-border-radius ]">
+										<input type="text" class="[ form-control ][ no-border-radius ]" name="nombre" placeholder="Nombre" data-parsley-error-message="Este campo es obligatorio" required>
 									</div>
 									<div class="[ form-group ]">
 										<label class="">Mail</label>
-										<input type="text" class="form-control [ no-border-radius ]">
+										<input type="email" class="[ form-control ][ no-border-radius ]" name="correo" data-parsley-type="email" data-parsley-required-message="Este campo es obligatorio" data-parsley-type-message="Por favor ingresa un correo electrónico válido." required >
 									</div>
 									<div class="[ form-group ]">
 										<label class="">Mensaje</label>
-										<textarea class="form-control [ no-border-radius ][ margin-bottom--small ]" rows="4"></textarea>
+										<textarea class="form-control [ no-border-radius ][ margin-bottom--small ]" rows="4" name="mensaje" placeholder="Mensaje" data-parsley-error-message="Este campo es obligatorio" required></textarea>
 									</div>
 									<button type="submit" class="[ btn btn-secondary width-100 ]">enviar</button>
 								</form>
+								<!-- Confirmacion formulario -->
+								<div class="[ hidden ][ text-center ][ center-block ][ js-thankyou ]">
+									<img class="[ margin-bottom--small ]" src="img/corona.png">
+									<p class="[ text-tertiary ]">¡Gracias por contactarnos <span class="[ js-name ]"></span>,</p>
+									<p>Nos comunicaremos lo antes posible</p>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -339,11 +345,22 @@
 				/**
 				 * On ready
 				**/
+
+				$('.js-form-contacto').parsley();
+
 				footerBottom();
 				/**
 				 * Triggered events
 				**/
 				$(window).resize(function () { footerBottom(); });
+
+		
+				$('.js-form-contacto').on('submit', function(e){
+					e.preventDefault();
+					sendContactEmail( this );
+				});
+
+
 			});
 		</script>
 
