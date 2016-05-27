@@ -8,7 +8,7 @@
 	$to = 'aris@pcuervo.com';
 	$subject = 'Contacto página Real Michoacana';
 	$headers = "From: $name <$email>\r\n";
-	$headers .= "Reply-To: aris@pcuervo.com\r\n";
+	$headers .= "Reply-To: ventas@larealmichoacana.com.mx\r\n";
 	$headers .= "Return-Path: aris@pcuervo.com\r\n";
 	$headers .= "CC: aris@pcuervo.com\r\n";
 	$headers .= "BCC: aris@pcuervo.com\r\n";
