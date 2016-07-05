@@ -2,14 +2,15 @@
 
 	$name = $_POST['nombre'];
 	$email = $_POST['correo'];
+	$destinatario = $_POST['destinatario'];
 	$contact_message = isset( $_POST['mensaje'] ) ? $_POST['mensaje'] : '-';
 
 	// Contacto Real Michoacana
 	$to = 'aris@pcuervo.com';
 	$subject = 'Contacto página Real Michoacana';
 	$headers = "From: $name <$email>\r\n";
-	$headers .= "Reply-To: ventas@larealmichoacana.com.mx\r\n";
-	$headers .= "Return-Path: aris@pcuervo.com\r\n";
+	$headers .= "Reply-To: <$destinatario>\r\n";
+	$headers .= "Return-Path: <$destinatario>\r\n";
 	$headers .= "CC: aris@pcuervo.com\r\n";
 	$headers .= "BCC: aris@pcuervo.com\r\n";
 	$headers .= "MIME-Version: 1.0\r\n";
