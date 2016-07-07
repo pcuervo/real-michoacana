@@ -6,13 +6,13 @@
 	$contact_message = isset( $_POST['mensaje'] ) ? $_POST['mensaje'] : '-';
 
 	// Contacto Real Michoacana
-	$to = 'aris@pcuervo.com';
+	$to = "<$destinatario>\r\n";
 	$subject = 'Contacto página Real Michoacana';
 	$headers = "From: $name <$email>\r\n";
 	$headers .= "Reply-To: <$destinatario>\r\n";
 	$headers .= "Return-Path: <$destinatario>\r\n";
-	$headers .= "CC: aris@pcuervo.com\r\n";
-	$headers .= "BCC: aris@pcuervo.com\r\n";
+	$headers .= "<$destinatario>\r\n";
+	$headers .= "<$destinatario>\r\n";
 	$headers .= "MIME-Version: 1.0\r\n";
 	$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
 	$message = '<html><body>';
@@ -28,4 +28,3 @@
 		'name'	=> $name,
 		);
 	echo json_encode($message , JSON_FORCE_OBJECT);
-
