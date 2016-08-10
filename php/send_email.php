@@ -7,12 +7,10 @@
 
 	// Contacto Real Michoacana
 	$to = "<$destinatario>\r\n";
-	$subject = 'Contacto página Real Michoacana';
+	$subject = 'Contacto página web Real Michoacana';
 	$headers = "From: $name <$email>\r\n";
 	$headers .= "Reply-To: <$destinatario>\r\n";
 	$headers .= "Return-Path: <$destinatario>\r\n";
-	$headers .= "<$destinatario>\r\n";
-	$headers .= "<$destinatario>\r\n";
 	$headers .= "MIME-Version: 1.0\r\n";
 	$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
 	$message = '<html><body>';
